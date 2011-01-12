@@ -1,7 +1,6 @@
 
 <ul id="news">
 <h1>{Do me some.news}</h1>
-<%= puts 'hej' %>
 <% @news.each do |n| %>
   <li class="<%= n.type_of_media %>">
 		<h2><a href="<%= n.url %>"><%= n.header %></a></h2>
