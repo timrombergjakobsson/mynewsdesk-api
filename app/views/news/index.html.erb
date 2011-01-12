@@ -1,0 +1,16 @@
+
+<ul id="news">
+<h1>{Do me some.news}</h1>
+<%= puts 'hej' %>
+<% @news.each do |n| %>
+  <li class="<%= n.type_of_media %>">
+		<h2><a href="<%= n.url %>"><%= n.header %></a></h2>
+		<p class="permalink"><a href="<%= n.url %>">Trackback</a></p>
+		<p class="meta"><strong><%= n.source_name %></strong><br/><%= n.created_at %><br/><%= n.geo %></p>
+		<p class="summary"><%= n.summary %></p>
+	</li>
+  <% end %>
+</ul>
+      
+
+ 
