@@ -104,7 +104,7 @@ input, select {
 
 
 body { 
-	background: rgb(34, 17, 17);
+	background: rgb(39, 40, 34);
 	font-family: Georgia, "Times New Roman", Times, serif;	                     
 }
 
@@ -121,7 +121,7 @@ h1 {
 h2 {
 	text-align:center;
 	font-size: 40px;  
-	color: aquamarine;
+	color: rgb(127, 255, 212);
 	margin-bottom: 40px;
 }
 
@@ -135,7 +135,11 @@ h2 {
 
 a {
 	font-size: 20px;
-	margin: 0px auto;
+	color: rgb(239, 90, 34);
+}
+
+a:hover {
+	color: rgb(127, 255, 212);
 }
 
 p {

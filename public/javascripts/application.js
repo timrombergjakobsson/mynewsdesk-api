@@ -1,6 +1,3 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults 
-
 $(document).ready(function(){
    console.log("hello")
    $('#content nav ul').infinitescroll({
@@ -8,7 +5,7 @@ $(document).ready(function(){
       nextSelector:  "nav#pagination #next",
       itemSelector:  "#content li",
       debug:         true,
-      loadingText:   "loading more news",
+      loadingText:   "Laddar in fler pressreleaser",
       loadingImg:    "/images/loading.gif",
       animate:       true,
       bufferPx:      10

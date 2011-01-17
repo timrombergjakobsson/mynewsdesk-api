@@ -5,12 +5,16 @@
   <%= stylesheet_link_tag :all %>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <%= javascript_include_tag "jquery.infinitescroll.min.js", "application", :cache => true %>
+  <%= javascript_include_tag 'jquery', 'rails', 'application' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-	
-
-<%= yield %>
+   <aside>
+   		<%= yield(:aside) %>
+   </aside>
+   <section id="content">
+		<%= yield %>
+   </section>
 
 </body>
 </html>
