@@ -1,3 +1,6 @@
 == Mynewsdesk API
 
+This is my take on the API of Mynewsdesk. A simple solution which utilizes the Nokogiri gem. 
+Im merely parsing the XML and displaying the response in an simple <ul> in the view.
+
 

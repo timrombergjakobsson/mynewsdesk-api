@@ -6,7 +6,7 @@ class News
   
   validates_presence_of :url, :type_of_media
   
-  attr_accessor :header, :source_name, :summary, :geo, :url, :created_at, :type_of_media  
+  attr_accessor :header, :source_name, :summary, :geo,  :url, :created_at, :type_of_media  
   
   def initialize(attributes = {})
     @header = attributes[:header]
