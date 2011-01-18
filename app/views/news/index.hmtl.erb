@@ -1,13 +1,19 @@
+<h1>{Do me some.news}</h1>
+<h2>[view them :here]</h1>
 
 <ul id="news">
-<h1>Some news</h1>
-<%= puts 'hej' %>
-<% @news.each do |news| %>
-  <li class="<%= item.type_of_media %>">
-		<h2><a href="<%= item.url %>"><%= item.header %></a></h2>
-		<p class="permalink"><a href="<%= item.url %>">Trackback</a></p>
-		<p class="meta"><strong><%= item.source_name %></strong><br/><%= item.created_at %><br/><%= item.geo %></p>
-		<p class="summary"><%= item.summary %></p>
-	</li>
+  <% @stories.each do |story| %>
+    <li class="<%= story.type_of_media %>">
+      <h2><%= link_to story.header, story.url %></h2>
+      <p class="permalink"><%= link_to 'Trackback', story.url %></p>
+      <p class="meta">
+        <strong><%= story.source_name %></strong>
+        <br/>
+        <%= story.created_at %>
+        <br/>
+        <%= story.geo %>
+      </p>
+      <p class="summary"><%= story.summary %></p>
+     </li>
   <% end %>
-</ul>
+</ul>      
