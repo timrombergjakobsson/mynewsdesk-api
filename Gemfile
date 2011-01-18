@@ -9,7 +9,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'nokogiri'
 gem 'debug_log'
 gem 'ruby-debug'
-#gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'jquery-rails', '>= 0.2.6'
 
 # Use unicorn as the web server
 # gem 'unicorn'

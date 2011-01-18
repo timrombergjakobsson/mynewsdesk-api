@@ -5,12 +5,12 @@ class NewsController < ApplicationController
   def index
     
     if params[:page].nil?
-          offset = 0
-          @page = 2
-        else
-          @page = params[:page].to_i+1
-          offset = params[:page].to_i*20-20
-        end
+       offset = 0
+       @page = 2
+    else
+       @page = params[:page].to_i+1
+       offset = params[:page].to_i*20-20
+    end
         
     apiKey = ("http://www.mynewsdesk.com/partner/api/1_0/a9e6a7533e996a5c2a3275d5b393a4b0/channel/290/material/list/")
     doc = Nokogiri::XML(open(apiKey).read) 

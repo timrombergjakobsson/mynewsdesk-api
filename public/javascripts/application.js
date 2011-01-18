@@ -5,7 +5,7 @@ $(document).ready(function(){
       nextSelector:  "nav#pagination #next",
       itemSelector:  "#content li",
       debug:         true,
-      loadingText:   "Laddar in fler pressreleaser",
+      loadingText:   "Loading more news",
       loadingImg:    "/images/loading.gif",
       animate:       true,
       bufferPx:      10
